@@ -47,6 +47,7 @@ export default function Alunos() {
                 setData({ alunos, loading: false, current: 1, pageSize: 5 });
             } catch {
                 toast.error("Erro ao carregar alunos");
+                console.error(error)
                 setData((d) => ({ ...d, loading: false }));
             }
         };

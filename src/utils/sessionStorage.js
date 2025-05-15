@@ -10,6 +10,6 @@ export const getSessionStorage = (key, initialValue) => {
 
 export const setSessionStorage = (key, value) => {
     if (isClient) {
-        setSessionStorage.setItem(key, JSON.stringify(value));
+        sessionStorage.setItem(key, JSON.stringify(value));
     }
 };
